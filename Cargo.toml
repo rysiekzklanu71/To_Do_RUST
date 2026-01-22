@@ -5,7 +5,7 @@ edition = "2024"
 
 [dependencies]
 anyhow = "1.0.100"#so that my newbie ass can make easier error handling
-chrono = "0.4.42" #for deadlines
+chrono = { version = "0.4.42", features = ["serde"] } #for deadlines
 crossterm = "0.29.0"# so the TUI run without it turning off imidietly
 ratatui = "0.29.0" # UI level
 serde = { version = "1.0.228", features = ["derive"] } #so I can store tasks in memory
